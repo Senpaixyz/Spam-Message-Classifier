@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Spam Classifier</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+
+</head>
+
+<body>
+    <nav class="navbar navbar-light">
+    <span class="navbar-brand mb-0 h1" style="color:#f78f1f">Spam Message Classifier WebApp</span>
+
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-sm-12 text-center text-success">
+                <h1 class="display-4" style="font-size:30px">CHECK MESSAGE IF ITS A SPAM OR NOT TO OUR BOT</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 col-sm-6 text-right">
+                <form action="{{ url_for('predict')}}"  method="POST">
+                    <textarea
+                        class="form-control"
+                        id="snippet"
+                        rows="3"
+                        required
+                        name="message"
+
+                      ></textarea>
+                    <input type="submit" class="btn btn-success mt-2 pull-right" value="PREDICT SPAM">
+                </form>
+                <img src='../static/img/kid1.png ' class="img-fluid mx-auto" style="width:70%" >
+            </div>
+             <div class="col-md-6 col-sm-6 pt-4 mt-5" >
+                 <span class="badge badge-success mx-2  ml-5" style="font-size:20px">
+                         {{ detailed_response }}<br>
+                 </span>
+                 <br>
+                 <img src={{img_path}} class="img-fluid mt-5 ml-5" style="width:70%" >
+             </div>
+        </div>
+            <div class="row">
+                <div class="col-md-12 cold-sm-12 text-center">
+                    <span class="badge bg-secondary text-light my-3" style="font-size: 30px">{{ text_class }}</span>
+                </div>
+                <div class="col-md-12 cold-sm-12 text-center">
+                    {% if (button_text|length >0): %}
+                    <a class="btn btn-primary" href="/">{{ button_text }}</a>
+                    {% endif %}
+                </div>
+        </div>
+    </div>
+<footer class="page-footer font-small mt-6">
+
+    <div class="footer-copyright text-center py-3">© 2021 Copyright:
+      <a href="#"> Jheno Silleza Cerbito</a>
+    </div>
+
+  </footer>
+</body>
+</html>
