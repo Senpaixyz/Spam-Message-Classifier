@@ -1,12 +1,6 @@
 from flask import Flask, render_template, request
-import sklearn
-from sklearn.preprocessing import StandardScaler
-from sklearn.feature_extraction.text import CountVectorizer
 from flask import escape
-import jsonify
-import requests
 import pickle
-import numpy as np
 import random
 app = Flask(__name__)
 
