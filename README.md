@@ -1,9 +1,10 @@
 # SPAM MESSAGE CLASSIFIER
 
-The spam message is a type of anonymous sender message type that often contains phishing links. It is unrequested message that often sent viat internet or SMS. The most obvious types of unwanted text messages that came from the unrecognized number or emails and the font by the senders was in the form of robo-texts sometimes are called spam that promiting products and scam. Sometimes they attempts to fool the person by sending 'Congratulations! You are the Winner!' message then they let the victim click that link and gives some private information.
+Spam messages are characterized as anonymous messages often containing phishing links. These unsolicited messages, transmitted via the internet or SMS, typically originate from unknown sources. They commonly take the form of robo-texts and are associated with spam that promotes products or scams. One prevalent tactic is sending deceptive messages like "Congratulations! You are the Winner!" in an attempt to trick recipients into clicking on malicious links and divulging private information.
 
-## Deployed at Heroku
-https://cerbito-spam-classifier.herokuapp.com/
+[![N|Solid](https://github.com/Senpaixyz/Spam-Message-Classifier/blob/master/images/landingpage.PNG?raw=true)](https://github.com/Senpaixyz/Spam-Message-Classifier/blob/master/images/landingpage.PNG)
+
+
 ## Spam Message Characteristics
 
 - Connection Behavior.
@@ -14,9 +15,8 @@ https://cerbito-spam-classifier.herokuapp.com/
 - Unnecessary Encoding.
 - Grokking the Site.
 
-[![N|Solid](https://github.com/Senpaixyz/Spam-Message-Classifier/blob/master/images/landingpage.PNG?raw=true)](https://github.com/Senpaixyz/Spam-Message-Classifier/blob/master/images/landingpage.PNG)
 
-[![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://github.com/Senpaixyz/faceEmotion-classifierr)
+
 ## Features
 
 - User Friendly Graphical User Interface.
